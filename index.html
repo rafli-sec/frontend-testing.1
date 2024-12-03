@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Testing Frontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>API Testing Frontend</h1>
+
+    <div id="forms">
+      <!-- Register Form -->
+      <div id="register-form">
+        <h2>Register</h2>
+        <input type="text" id="reg-name" placeholder="Name" />
+        <input type="email" id="reg-email" placeholder="Email" />
+        <input type="password" id="reg-password" placeholder="Password" />
+        <button onclick="register()">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+
+      <!-- Forgot Password Form -->
+      <div id="forgot-password-form">
+        <h2>Forgot Password</h2>
+        <input type="email" id="forgot-email" placeholder="Email" />
+        <button onclick="forgotPassword()">Reset Password</button>
+      </div>
+
+      <!-- Home -->
+      <div id="home" style="display: none;">
+        <h2>Welcome Home</h2>
+        <p id="home-message"></p>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+      <!-- Profile -->
+      <div id="profile" style="display: none;">
+        <h2>Update Profile</h2>
+        <input type="text" id="profile-name" placeholder="Name" />
+        <input type="number" id="profile-age" placeholder="Age" />
+        <input type="text" id="profile-gender" placeholder="Gender" />
+        <button onclick="updateProfile()">Update</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
